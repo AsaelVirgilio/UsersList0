@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    private let presenter = Presenter()
+    let presenter = Presenter()
     var users: [ViewModelCell] = []
     
     var cellViewModel: ViewModelCell?
