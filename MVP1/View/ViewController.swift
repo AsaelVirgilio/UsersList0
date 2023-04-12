@@ -31,10 +31,8 @@ class ViewController: UIViewController {
     }
     
     func configView(){
-        
-        self.title = "Main View"
+        self.title = "Users list"
         setupTableView()
-        
     }
 }
 

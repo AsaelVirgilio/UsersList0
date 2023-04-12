@@ -41,8 +41,4 @@ class Presenter{
         delegate?.presentUsers(users: cellDataSource)
     }
     
-//    func getNumberRows() -> Int{
-//        self.users.count
-//    }
-    
 }
