@@ -32,6 +32,10 @@ class Presenter{
         self.delegate = delegate
     }
     
+    func tapCellTable(index: IndexPath){
+        delegate?.presentAlert(title: cellDataSource[index.row].username, message: cellDataSource[index.row].mail)
+    }
+    
     func mapCellData(){
         self.cellDataSource = self.users.compactMap({ViewModelCell(user: $0)})
         delegate?.presentUsers(users: cellDataSource)
